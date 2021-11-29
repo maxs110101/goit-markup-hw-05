@@ -71,7 +71,7 @@
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button type="button" class="hero-btn transition">Заказать услугу</button>
+          <button type="button" class="hero-btn transition" data-modal-open>Заказать услугу</button>
         </div>
       </section>
       <section class="about-advantages">
@@ -109,24 +109,16 @@
           <h2 class="about-title">Чем мы занимаемся</h2>
           <ul class="work-list list">
             <li class="works-item">
-                <img src="./img/index/box-1.jpg" alt="Десктоп" width="370" height="294"/>
-                <p class="label">Десктопные приложения</p>
-              </a>
+              <img src="./img/index/box-1.jpg" alt="Десктоп" width="370" height="294" />
+              <p class="label">Десктопные приложения</p>
             </li>
             <li class="works-item">
-                <img src="./img/index/box-2.jpg" alt="Мобайл" width="370" height="294" />
-                <p class="label">Мобильные приложения</p>
-              </a>
+              <img src="./img/index/box-2.jpg" alt="Мобайл" width="370" height="294" />
+              <p class="label">Мобильные приложения</p>
             </li>
             <li class="works-item">
-                <img
-                  src="./img/index/box-3.jpg"
-                  alt="Дизайн"
-                  width="370"
-                  height="294"
-                />
-                <p class="label">Дизайнерские решения</p>
-              </a>
+              <img src="./img/index/box-3.jpg" alt="Дизайн" width="370" height="294" />
+              <p class="label">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
@@ -423,5 +415,14 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close-btn" data-modal-close></button>
+        <svg class="madal-close-icon" width="11" height="11">
+          <use href="./img/icons.svg#close"></use>
+        </svg>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
